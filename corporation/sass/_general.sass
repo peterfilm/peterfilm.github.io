@@ -1,0 +1,433 @@
+@import "vars"
+@import "../css/icons.css"
+
+header
+    min-height: 670px
+    padding-top: 30px
+    background-color: $color2
+
+.hamburger
+    display: none
+
+.menu
+    min-height: 90px
+    background-color: $color3
+    display: flex
+    justify-content: center
+    align-content: center
+
+    &_links
+        display: flex
+        justify-content: center
+        list-style: none
+        min-width: 550px
+        margin: 0
+        padding: 0
+        &_item
+            width: 25%
+            height: 100%
+            text-align: center
+            cursor: pointer
+            transition: .5s all
+            a
+                display: block
+                height: 100%
+                color: $color4
+                padding-top: 30px
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: 600
+                font-size: 14px
+            &:hover
+                background-color: $color1
+
+.button
+    width: 227px
+    height: 56px
+    background-color: $color1
+    border-radius: 5px
+    border: none
+    color: $color4
+    font-size: 18px
+    font-weight: 600
+    transition: 0.5s all
+    &:hover
+        background-color: $color4
+        border: 1px solid $color1
+        color: $color1
+
+.button2
+    width: 227px
+    height: 56px
+    background-color: $color4
+    border-radius: 5px
+    border: 1px solid $color1
+    color: $color1
+    font-size: 18px
+    font-weight: 600
+    transition: 0.5s all
+    &:hover
+        background-color: $color1
+        border: none
+        color: $color4
+
+h1
+    font-size: 60px
+    font-weight: 800
+    text-transform: uppercase
+    padding-top: 80px
+    color: $color5
+    opacity: 0.8
+
+.sep_red
+    display: block
+    margin: 0 auto
+    height: 2px
+    width: 134px
+    background-color: $color1
+    margin-top: 34px
+
+.video
+    &_subtext
+        padding: 37px 0 63px 0
+    &_clip
+        transform: translateY(10%)
+        display: flex
+        justify-content: flex-end
+        iframe
+            box-shadow: 0px 14px 73px 0px rgba(0, 0, 0, 0.39)
+
+.provide
+    padding: 110px 18px 0 18px
+    &_title
+        h2
+            color: $color5
+            font-size: 42px
+            font-weight: 700
+            text-transform: uppercase
+            color: $color5
+            opacity: 0.6
+    &_subtext
+        max-width: 520px
+        margin-top: 50px
+    .button2
+        margin-top: 55px
+    &_sep
+        margin-top: 50px
+        background-color: $color2
+        height: 2px
+        width: 100%
+
+.icons
+    &_title
+        margin-top: 30px
+        font-size: 24px
+        font-weight: 600
+        color: $color5
+        opacity: 0.6
+    &_text
+        margin: 10px 0 50px 0
+        font-size: 14px
+        font-weight: 400
+
+.products
+    padding-top: 110px 
+    min-height: 1000px
+    display: flex
+    position: relative
+    flex-direction: column
+    &_title
+        text-transform: uppercase
+        color: $color5
+        opacity: 0.6
+        font-size: 42px
+        font-weight: 600
+        text-align: center
+    &_subtitle
+        display: block
+        margin: 0 auto
+        max-width: 520px
+        text-align: center
+    &_menu
+        padding: 0
+        margin-top: 90px
+        min-width: 850px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        list-style: none
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        li:hover
+                color: $color1
+        &_item
+            cursor: pointer
+            display: block
+            color: $color5
+            opacity: 0.6
+            font-size: 22px
+            font-weight: 600
+            text-transform: uppercase
+    &_photos
+        margin-top: 200px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &_item
+            margin: 8px
+            flex-basis: 23%
+
+.team
+    padding: 70px 0 110px 0
+    min-height: 884px
+    &_subtitle
+        max-width: 500px
+        margin-top: 32px
+    &_title
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 42px
+        color: $color5
+        opacity: 0.6
+    .sep_red
+        margin: 0
+        margin-top: 36px
+        width: 132px
+
+    &_markphoto
+        margin-top: 72px
+    &_markphoto2
+        display: none
+        margin-top: 35px
+    &_mark
+        margin-top: 72px
+        font-weight: 600
+        font-size: 30px
+        text-transform: uppercase
+        color: $color5
+        opacity: 0.6
+    &_about_mark
+        max-width: 660px
+        font-weight: 400
+        font-size: 16px
+        color: $color5
+        opacity: 0.6
+    &_marklinks
+        padding-left: 0
+        margin-top: 40px
+        list-style: none
+        display: flex
+        justify-content: space-between
+        max-width: 400px
+        font-weight: 400
+        font-size: 18px
+        font-style: italic
+        &_link
+            a
+                color: $color5
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    text-decoration: underline
+                    color: $color1
+    &_all
+        margin-top: 88px
+        &_guy
+            position: relative
+            transition: 0.5s all
+            &_name
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 0
+                position: absolute
+                background-color: $color5
+                color: $color4
+                opacity: 0
+                bottom: 0px
+                text-align: center
+                font-size: 18px
+                font-weight: 600
+                transition: 0.5s all
+
+.email
+    min-height: 510px
+    padding: 140px 75px
+    background: url("../img/building.jpg") center (center / cover) no-repeat
+    text-align: center
+
+    &_title
+        color: $color2
+        font-size: 42px
+        font-weight: 700
+    &_subtitle
+        margin-top: 47px
+        color: $color4
+        font-size: 16px
+        font-weight: 400
+    &_form
+        margin-top: 62px
+        input
+            min-width: 520px
+            min-height: 80px
+            border-radius: 5px
+            border: none
+            padding-left: 37px
+            color: $color3
+            font-size: 16px
+            font-weight: 400
+        .button
+            margin-left: 22px
+            min-height: 80px
+            min-width: 214px
+            
+.contact
+    min-height: 990px
+    padding: 110px 0
+    position: relative
+    &_message_alert
+        padding: 0 25px
+        margin-bottom: 25px
+        display: none
+        align-items: center
+        width: 100%
+        height: 50px
+        border: 1px solid $color3
+        color: $color4
+        font-weight: 400
+        font-size: 14px
+        background-color: $color1
+        font-weight: 600
+    &_message_accept
+        padding: 0 25px
+        margin-bottom: 25px
+        display: none
+        align-items: center
+        width: 100%
+        height: 50px
+        border: 1px solid $color3
+        color: $color3
+        font-weight: 400
+        font-size: 14px
+        background-color: #79e76f
+        font-weight: 600
+
+    &_title
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 42px
+        color: $color5
+        opacity: 0.6
+    &_subtitle
+        max-width: 750px
+        margin-top: 50px
+    .sep_red
+        margin: 0
+        margin-top: 50px
+
+    &_form
+        margin-top: 71px
+        max-width: 760px
+
+        .button
+            margin-top: 19px
+            width: 100%
+    
+    #name, #email
+        min-width: 369px
+        min-height: 69px
+        border-radius: 5px
+        border: none
+        padding-left: 21px
+        background-color: $color6
+        color: $color3
+        font-size: 16px
+        font-weight: 400
+    #textarea
+        margin-top: 25px
+        min-width: 100%
+        border: none
+        border-radius: 5px
+        background-color: $color6
+        padding: 35px 25px
+        color: $color3
+        font-size: 16px
+        font-weight: 400
+
+    .contact_info2
+        margin-top: 25px
+        display: none
+        background-color: $color3
+        padding: 25px 80px
+        min-height: 200px
+        width: 100%
+        &_title
+            font-weight: 700
+            font-size: 18px
+            color: $color2
+            text-transform: uppercase
+        &_table
+            max-width: 300px
+            margin-top: 25px
+            &_address
+                font-weight: 400
+                font-size: 16px
+                color: $color2
+
+    .contact_info
+        top:406px
+        background-color: $color3
+        padding: 145px 80px
+        position: absolute
+        min-height: 483px
+        left: 60%
+        width: 40%
+        &_title
+            font-weight: 700
+            font-size: 18px
+            color: $color2
+            text-transform: uppercase
+        &_table
+            max-width: 300px
+            margin-top: 25px
+            &_address
+                font-weight: 400
+                font-size: 16px
+                color: $color2
+
+footer
+    height: 111px
+    background-color: $color3
+    .footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: $color4
+        height: 111px
+        &_right
+            padding: 0
+            width: 200px
+            display: flex
+            justify-content: space-between
+            &_item
+                width: 35px
+                height: 35px
+                background-color: $color6
+                border-radius: 100%
+                position: relative
+                a
+                    span
+                        font-size: 25px
+                        color: $color3
+                        position: absolute
+                        text-align: center
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        left: 50%
+                        transition: 0.3s all
+                a:hover
+                    span
+                        color: $color1
+                        
